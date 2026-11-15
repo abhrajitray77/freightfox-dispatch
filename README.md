@@ -109,7 +109,7 @@ The planner is a `DispatchStrategy` (strategy pattern), so a smarter algorithm c
 
 **Why a heuristic.** Finding the true minimum total distance with capacities is the capacitated vehicle routing problem, which is NP-hard. The greedy approach is fast, predictable and never breaks a constraint. It runs in O(n log n + n × m) for n orders and m vehicles, and a test plans 10,000 orders across 200 vehicles in well under a second.
 
-With the sample data, the fleet can carry 500 kg but the orders weigh 645 kg. So all 275 kg of HIGH orders are assigned, the MEDIUM and LOW orders fill the remaining room, and 8 LOW orders (145 kg) come back as unassigned with a reason.
+With the sample data, the fleet can carry 500 kg but the orders weigh 645 kg. So all 275 kg of HIGH orders are assigned, the MEDIUM and LOW orders fill the remaining room, and 8 LOW orders (155 kg) come back as unassigned with a reason. 490 kg is assigned, and 10 kg of space stays free because every leftover order is 15 kg or more.
 
 ### Assumptions
 
